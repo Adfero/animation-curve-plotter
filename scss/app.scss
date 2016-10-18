@@ -1,0 +1,27 @@
+@import 'normalize';
+
+* {
+  box-sizing: border-box;
+}
+
+.equations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+  h1 {
+    margin-top: 0;
+  }
+}
+.output {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 100%;
+}
