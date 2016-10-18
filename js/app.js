@@ -112,7 +112,7 @@ angular.module('anim-curve-plotter')
     $urlRouterProvider.otherwise('/');
     $stateProvider.state('months', {
       url: '/:eq',
-      templateUrl: '/partials/app.html',
+      templateUrl: 'partials/app.html',
       controller: 'AppController'
     })
   }])
