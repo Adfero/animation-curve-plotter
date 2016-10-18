@@ -1,0 +1,35 @@
+<div class="equations">
+  <h1 class="page-header">Animation Curves</h1>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th width="60%">Equation</th>
+        <th width="25%">Color</th>
+        <th width="15%"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="equation in equations track by $index">
+        <td>
+          <div class="form-group" ng-class="errorClass(equation)">
+            <input type="text" class="form-control input-sm" ng-model="equation.text" />
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" class="form-control input-sm" ng-model="equation.color" />
+          </div>
+        </td>
+        <td>
+          <button class="btn btn-sm btn-danger" ng-click="removeEquation($index)">
+            <span class="sr-only">Delete</span>
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </table>
+  <button class="btn btn-sm btn-success" ng-click="addEquation()">Add Equation</button>
+</div>
+<canvas class="output"></canvas>
